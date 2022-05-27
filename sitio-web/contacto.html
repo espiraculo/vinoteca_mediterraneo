@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinoteca Mediterráneo</title>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,800,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79948dc6fe.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="announcement-bar">
+            <div class="announcement-bar__anuncio">
+                <img src="../assets/img/Plus pagos 20x20.jpg" alt="">
+                <span>Billetera Santa Fe 30% Dcto</span>
+            </div>
+
+
+        </div>
+        <div class="mainHeader">
+            <div class="mainHeader__logo">
+                <a href="/index.html" id="logo">
+                    <img src="../assets/img/Logo-sinFondo.png" alt="Vinoteca Mediterraneo">
+                    <div class="mainHeader__logo-text">
+                        <p class="mainHeader__logo-text1">Vinoteca</p>
+                        <p class="mainHeader__logo-text2">Mediterráneo</p>
+                    </div>
+                </a>
+            </div>
+            <div class="searcher">
+                <select name="categoria" id="categoria" class="searcher__select">
+                    <option value="todas" class="searcher__option">Categorías</option>
+                    <option value="vinos" class="searcher__option">Vinos</option>
+                    <option value="espumantes" class="searcher__option">Espumantes</option>
+                    <option value="cervezas" class="searcher__option">Cervezas</option>
+                    <option value="wiskys" class="searcher__option">Whiskys</option>
+                    <option value="aperitivos" class="searcher__option">Aperitivos</option>
+                    <option value="regaleria" class="searcher__option">Regaleria</option>
+                </select>
+
+                <input type="text" id="searcher-input" class="searcher__input" placeholder="¿Qué deseas buscar?">
+                <button class="searcher__btn">Buscar</button>
+            </div>
+
+            <ul class="mainHeader__actions">
+                <li class="actions__li">
+                    <a href="/login.html" class="login">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="login__txt">
+                            <p class="login__txt--1">Iniciar</p>
+                            <p class="login__txt--2">sesión</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="actions__li">
+                    <a href="">
+                        <div class="fav">
+                            <i class="fa-regular fa-heart fav__ico"></i>
+                            <p class="fav__txt">Favoritos</p>
+                        </div>
+
+
+                    </a>
+                </li>
+                <li class="actions__li">
+                    <a href="">
+                        <div class="carrito">
+                            <i class="fa-solid fa-cart-shopping carrito__ico"></i>
+                            <p class="carrito__txt">Carrito</p>
+                        </div>
+
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+    </header>
+
+    <div class="menu-bar">
+        <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label for="check__menu" id="label__check">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul class="menu__bar">
+                        <li class="menu__item menu__item--home"><a href="#" id="selected" class="menu__link"></a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Nosotros</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__item--dropdown">Productos</a>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="#">Vinos</a></li>
+                                <li class="submenu__item"><a href="#">Espumantes</a></li>
+                                <li class="submenu__item"><a href="#">Cervezas</a></li>
+                                <li class="submenu__item"><a href="#">Whiskys</a></li>
+                                <li class="submenu__item"><a href="#">Aperitivos</a></li>
+                                <li class="submenu__item"><a href="#">Regaleria</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu__item"><a href="#" class="menu__link">Eventos</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                        <li class="menu__item"><a href="/contacto.html" class="menu__link">Contacto</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <main>
+        <section id="contacto">
+            <div class="contacto-container">
+                <div class="contacto__form">
+                    <h2 class="contacto__h2">Contacto</h2>
+                    <p class="contacto__p">Envianos tu consulta y te responderemos a la brevedad</p>
+                    <form action="" class="form-contacto" id="form-contacto">
+                        <div class="contacto__name">
+                            <label for="nombre" class="contact-label">Nombre y Apellido</label>
+                            <input class="input1" type="text" name="name" id="contact-name" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="contacto__mail">
+                            <label for="mail" class="contact-label">Mail</label>
+                            <input class="input1" type="email" name="email" id="email" placeholder="Ingrese su email">
+                        </div>
+                        <div class="contacto__asunto">
+                            <label for="asunto" class="contact-label">Asunto</label>
+                            <input type="text" placeholder="Ingrese un asunto" class="input1" id="asunto">
+                        </div>
+                        
+                        <div class="contacto__mensaje">
+                            <label for="msj" class="contact-label">Mensaje</label>
+                            <textarea class="input1" name="mensaje" id="mensaje" cols="30" rows="10"
+                                placeholder="Dejanos tu mensaje..."></textarea>
+                        </div>
+                        <input type="submit" value="Enviar" class="contacto-btn">
+                    </form>
+                </div>
+                <div class="contacto__info">
+                    <div class="info-item">
+                        <h3> <i class="fa-solid fa-location-dot"></i> Dirección</h3>
+                        <p>Cafferata 356, Barrio Dr. Luis Agote, Rosario.</p>    
+                    </div>
+                    <div class="info-item">
+                        <h3> <i class="fa-regular fa-clock"></i> Horarios</h3>
+                        <p>Lunes a Sábados: de 10 a 14hs y de 16 a 21hs</p>
+                        <p>Domingos: de 10 a 14hs.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3> <i class="fa-solid fa-phone"></i> Teléfono</h3>
+                        <p>(341) 239 - 1160</p>
+                    </div>
+                    <div class="info-item">
+                        <h3> <i class="fa-brands fa-whatsapp"></i> Teléfono</h3>
+                        <p>(341) 387- 7024</p>
+                    </div>
+                    <div class="info-item">
+                        <h3> <i class="fa-regular fa-envelope"></i> E-mail</h3>
+                        <p>vinotecamediterraneo@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3> Redes Sociales</h3>
+                        <div class="contacto-redes">
+                        <p><a href="https://www.facebook.com/vinosmediterraneo" target="_blank"><i class="fa-brands fa-facebook"></i></p>
+                        <p><a href="https://www.instagram.com/vinosmediterraneo/" target="_blank"><i class="fa-brands fa-instagram"></i></p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.590140597464!2d-60.672017484195216!3d-32.935425378651686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5409625fe9%3A0x90a8df4b10029cf4!2sVinoteca%20Mediterr%C3%A1neo!5e0!3m2!1ses!2sar!4v1653679715885!5m2!1ses!2sar"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="newsletter">
+            <p>Suscribite para recibir <span>ofertas especiales</span></p>
+    
+            <div class="newsletter__container">
+                <i class="far fa-envelope"></i>
+                <input type="text" id="" placeholder="Ingrese su email">
+                <button>Suscribirse</button>
+            </div>    
+        </div>
+    
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-info__col footer-info__col-1">
+                    <a href="#" class="footer-logo">
+                        <div class="footer-logo__img"></div>
+                        <div class="footer__logo-text">
+                            <p class="footer__logo-text1">Vinoteca</p>
+                            <p class="footer__logo-text2">Mediterráneo</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-info__col footer-info__col-2">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de envíos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info__col footer-info__col-3">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="#">Vinos</a></li>
+                        <li><a href="#">Espumantes</a></li>
+                        <li><a href="#">Cervezas</a></li>
+                        <li><a href="#">Whiskys</a></li>
+                        <li><a href="#">Aperitivos</a></li>
+                        <li><a href="#">Regaleria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info__col footer-info__col-4">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-phone"></i> (341) 239-1160</a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i> (341) 387-7024</a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i><span>vinotecamediterraneo@gmail.com</span>
+                            </a></li>
+                    </ul>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/vinosmediterraneo" target="_blank"><img
+                                src="../assets/img/Redes/icono_facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/vinosmediterraneo/" target="_blank"><img
+                                src="../assets/img/Redes/icono_instagram.png" alt=""></a>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="footer-end">
+                <small>
+                    <p class="before-last-line">Beber con moderación. Prohibida su venta a menores de 18 años.</p>
+                    <p class="last-line">&copy;2022 <span class="name">Vinoteca Mediterraneo.</span> <span
+                            class="creator">Diseño Web por <span class="creator__name"> Martín N. Aguirre</span></span>
+                    </p>
+                </small>
+            </div>
+    
+    
+        </div>
+    
+    </footer>
+    <script src="./js/index.js"></script>
+    </body>
+    
+    </html>
